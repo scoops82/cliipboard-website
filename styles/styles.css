@@ -1,0 +1,156 @@
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: #f2f2f2;
+  color: #9eabb2;
+  text-align: center;
+  margin-top: 0;
+  background-image: url("/images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4c545c;
+  font-weight: 600;
+  letter-spacing: -0.52px;
+  line-height: 40px;
+}
+
+p {
+  margin-top: 0;
+}
+
+header,
+section {
+  margin-left: 32px;
+  margin-right: 32px;
+  line-height: 26px;
+}
+
+h1 {
+  margin-top: 123px;
+  margin-bottom: 24px;
+  padding-top: 189px;
+  background-image: url("/images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  font-size: 32px;
+}
+
+ul .download-links-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.download-links-list > li {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  align-self: stretch;
+}
+
+.download-links-list > li:nth-child(2) {
+  margin-bottom: 160px;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 13px 50px;
+}
+
+.ios-download {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.mac-download {
+  background-color: hsl(233, 100%, 69%);
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h2 .snippets {
+  margin-top: 160px;
+}
+
+.computer-image {
+  margin-top: 65px;
+}
+
+.snippets-list {
+  margin-top: 56px;
+  margin-bottom: 186px;
+}
+
+h3 {
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+.access-anywhere-section {
+  margin-bottom: 130px;
+}
+
+.workflow-list > li {
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: 56px;
+  padding-top: 75px;
+}
+
+.blacklist {
+  background-image: url("/images/icon-blacklist.svg");
+  margin-top: 90px;
+}
+
+.text-snippet {
+  background-image: url("/images/icon-text.svg");
+}
+
+.sneak-preview {
+  background-image: url("/images/icon-preview.svg");
+}
+
+.partner-logos {
+  margin-top: 131px;
+  margin-bottom: 120px;
+}
+.partner-logos li {
+  min-height: 120px;
+}
+
+footer {
+  background-color: hsla(201, 11%, 66%, 0.1);
+  background-image: url("/images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center 52px;
+  min-height: 500px;
+  padding-top: 147px;
+  color: #4c545c;
+  font-size: 18px;
+}
+
+.footer-menu > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}

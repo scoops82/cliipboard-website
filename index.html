@@ -11,29 +11,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
-  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/images/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/images/favicon-128.png" sizes="128x128" />
+
+
   <meta name="application-name" content="&nbsp;" />
   <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+  <meta name="msapplication-TileImage" content="/images/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="/images/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="/images/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="/images/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="/images/mstile-310x310.png" />
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/styles/generics.css">
+  <link rel="stylesheet" href="/styles/styles.css">
 
   <title>Clipboard landing page</title>
 </head>
@@ -42,6 +51,7 @@
   <main>
 
     <article>
+      <div class="marble-background"></div>
       <header>
         <h1>A history of everything you copy</h1>
 
@@ -50,22 +60,27 @@
           copy. Instantly access your clipboard on all your devices.
         </p>
 
-        <ul>
-          <li><a class="ios-download" href="#">Download for iOS</a></li>
-          <li><a class="mac-download" href="#">Download for Mac</a></li>
+        <ul class="download-links-list">
+          <li>
+            <a class="btn ios-download" href="#">Download for iOS</a>
+          </li>
+          <li>
+            <a class="btn mac-download" href="#">Download for Mac</a>
+          </li>
         </ul>
       </header>
 
       <section>
-        <h2>Keep track of your snippets</h2>
+        <h2 class="snippets">Keep track of your snippets</h2>
 
         <p>
           Clipboard instantly stores any item you copy in the cloud,
           meaning you can access your snippets immediately on all your
           devices. Our Mac and iOS apps will help you organize everything.
         </p>
+        <img class="computer-image" src="/images/image-computer.png" alt="app on desktop computer">
 
-        <ul>
+        <ul class="snippets-list">
           <li>
             <h3>Quick Search</h3>
 
@@ -85,13 +100,14 @@
 
       </section>
 
-      <section>
+      <section class="access-anywhere-section">
         <h2>Access Clipboard anywhere</h2>
 
         <p>
           Whether you’re on the go, or at your computer, you can access all your Clipboard
           snippets in a few simple clicks.
         </p>
+        <img src="/images/image-devices.png" alt="clipbaord app on phone and tablet">
       </section>
 
       <section>
@@ -99,18 +115,18 @@
 
         <p>We’ve got the tools to boost your productivity.</p>
 
-        <ul>
-          <li>
+        <ul class="workflow-list">
+          <li class="blacklist">
             <h3>Create blacklists</h3>
 
             <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
           </li>
-          <li>
+          <li class="text-snippet">
             <h3>Plain text snippets</h3>
 
             <p>Remove unwanted formatting from copied text for a consistent look.</p>
           </li>
-          <li>
+          <li class="sneak-preview">
             <h3>Sneak preview</h3>
 
             <p>Quick preview of all snippets on your Clipboard for easy access.</p>
@@ -119,11 +135,11 @@
       </section>
       <section class="partner-logos">
         <ul>
-          <li>Google</li>
-          <li>IBM</li>
-          <li>Microsoft</li>
-          <li>Hewlett Packard Enterprise</li>
-          <li>Vector Graphics</li>
+          <li><img src="/images/logo-google.png" alt="Google logo"></li>
+          <li><img src="/images/logo-ibm.png" alt="IBM logo"></li>
+          <li><img src="/images/logo-microsoft.png" alt="Microsoft logo"></li>
+          <li><img src="/images/logo-hp.png" alt="Hewlett Packard Enterprise logo"></li>
+          <li><img src="/images/logo-vector-graphics.png" alt="Vector Graphics logo"></li>
         </ul>
 
       </section>
@@ -135,9 +151,9 @@
           Available for free on the App Store. Download for Mac or iOS, sync with iCloud
           and you’re ready to start adding to your clipboard.
         </p>
-        <ul>
-          <li><a class="ios-download" href="#">Download for iOS</a></li>
-          <li><a class="mac-download" href="#">Download for Mac</a></li>
+        <ul class="download-links-list">
+          <li><a class="btn ios-download" href="#">Download for iOS</a></li>
+          <li><a class="btn mac-download" href="#">Download for Mac</a></li>
         </ul>
       </section>
     </article>
@@ -152,9 +168,9 @@
       <li><a href="#">Install Guide</a></li>
     </ul>
     <ul class="social-icons">
-      <li></li>
-      <li></li>
-      <li></li>
+      <li><a href="https://facebook.com"><img src="/images/icon-facebook.svg" alt="Facebook Icon"></a></li>
+      <li><a href="https://twitter.com/"><img src="/images/icon-twitter.svg" alt="Twitter Icon"></a></li>
+      <li><a href="https://www.instagram.com/"><img src="/images/icon-instagram.svg" alt="instagram icon"></a></li>
     </ul>
 
 
