@@ -181,6 +181,9 @@ footer {
   color: hsl(171, 66%, 44%);
 }
 
-.footer-wrapper img:hover {
+.footer-wrapper svg {
+  fill: #4c545c;
+}
+.footer-wrapper svg:hover {
   fill: hsl(171, 66%, 44%);
 }
